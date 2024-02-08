@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPSU</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .banner video {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        @media(min-aspect-ratio: 16/9) {
+            .banner video {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        label {
+            position: absolute;
+            width: 45px;
+            height: 22px;
+            right: 25px;
+            top: 20px;
+            border: 2px solid;
+            border-radius: 20px;
+        }
+
+        label:before {
+            position: absolute;
+            content: '';
+            width: 15px;
+            height: 15px;
+            left: 1px;
+            top: 1;
+            bottom: 2px;
+            border-radius: 50%;
+            background: #000;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        label.active:before {
+            left: 24px;
+            background: #fff;
+        }
+
+        body.night {
+            background: #000;
+            color: #fff;
+        }
+
+        @media screen and (min-width:900px) {
+            .respon {}
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="wrap">
+        <header>
+            <nav>
+                <label id="dark-change"></label>
+                <div class="logo">
+                    <a href="index.html">
+                        <div>
+                            <img src="img/CPSU.jpg" alt="">
+                        </div>
+                        <div
+                            style="text-transform: none; color:#f4a460; font-weight: bold; font-size: 24px; margin-left: 5px; margin-top: 7px; font-size: 20px; font-family:segoe;">
+                            <i></i>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="respon">
+
+                    <div>
+                        <ul>
+                            <li><a href="#home" class="active">Home</a></li>
+                            <li><a href="#dept">Departments</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#about">About</a></li>
+
+                        </ul>
+                    </div>
+            </nav>
+
+            <section id="home">
+                <div class="slides slide1">
+                    <div class="wrapper">
+                        <h1 class="banner-text"> </h1>
+
+                    </div>
+                    <div class="img-logo">
+                        <div class="logo1">
+                            <img src="img/cpsu.jpg" style="border-radius: 50%;" height="100%" width="100%">
+
+                        </div>
+                        <div class="logo1">
+                            <img src="img/l2.jpeg" style="border-radius: 50%;" height="100%" width="100%">
+
+                        </div>
+                        <div class="logo1">
+                            <img src="img/2.jpg" style="border-radius: 50%;" height="100%" width="100%">
+                        </div>
+                    </div>
+
+                </div>
+    </div>
+    </section>
+
+    </header>
+
+
+
+    <section id="dept">
+        <div class="slides slide2">
+
+            <div class="title">
+                <h1><b>CPSU DEPARTMENTS</b></h1>
+            </div>
+            <center>
+                <div class="dept">
+                    <div class="dept-con">
+                        <img src="img/agri.jpg" style="border-radius: 50%; ">
+                        <p><b>AGRICULTURE DEPARTMENT </b><br> <br>
+                            <a class="btn btn-primary"
+                                href="https://www.finduniversity.ph/universities/negros-state-college-of-agriculture/courses/agriculture/">Courses</a>
+                        </p>
+                    </div>
+                    <div class="dept-con">
+                        <img src="img/css.jpg" style="border-radius: 50%; ">
+                        <p> <b>CSS DEPARTMENT </b><br> <br>
+                            <a class="btn btn-primary"
+                                href="https://www.finduniversity.ph/universities/negros-state-college-of-agriculture/undergraduate-courses/information-technology/">Courses</a>
+                        </p>
+                    </div>
+                    <div class="dept-con">
+                        <img src="img/en.jpg" style="border-radius: 50%; ">
+                        <p> <b>ENGINEERING DEPARTMENT </b><br> <br>
+                            <a class="btn btn-primary"
+                                href="https://www.finduniversity.ph/universities/negros-state-college-of-agriculture/courses/engineering/">Courses</a>
+                        </p>
+                    </div>
+                </div>
+            </center>
+            <center>
+                <div class="dept">
+                    <div class="dept-con">
+                        <img src="img/ed2.jpg" style="border-radius: 50%; ">
+                        <p> <b>EDUCATION DEPARTMENT </b><br> <br>
+                            <a class="btn btn-primary"
+                                href="https://www.finduniversity.ph/universities/negros-state-college-of-agriculture/undergraduate-courses/education/">Courses</a>
+                        </p>
+                    </div>
+                    <div class="dept-con">
+                        <img src="img/crim.jpg" style="border-radius: 50%; ">
+                        <p> <b>CRIMINOLOGY DEPARTMENT </b><br> <br>
+                            <a class="btn btn-primary"
+                                href="https://www.finduniversity.ph/universities/negros-state-college-of-agriculture/undergraduate-courses/education/">Courses</a>
+                        </p>
+                    </div>
+                    <div class="dept-con">
+                        <img src="img/hm.jpg" style="border-radius: 50%; ">
+                        <p> <b>CBM DEPARTMENT </b><br> <br>
+                            <a class="btn btn-primary"
+                                href="https://www.finduniversity.ph/universities/negros-state-college-of-agriculture/undergraduate-courses/education/">Courses</a>
+                        </p>
+                    </div>
+                </div>
+            </center>
+        </div>
+
+    </section>
+
+
+    <section id="gallery">
+        <div class="slides slide3">
+            <div class="gallery">
+                <center>
+                    <h2> <b>CPSU VIEW </b></h2>
+                </center>
+            </div>
+            <div class="g-con">
+                <div class="top img">
+                    <div class="img-con"><img src="img/2.jpg" height="80%" width="89%" alt=""></div>
+                    <div class="img-con"><img src="img/1.jpg" height="80%" width="89%" alt=""></div>
+                    <div class="img-con"><img src="img/3.jpg" height="80%" width="89%" alt=""></div>
+                    <div class="img-con"><img src="img/4.jpg" height="80%" width="89%" alt=""></div>
+                    <div class="img-con"><img src="img/5.jpg" height="80%" width="89%" alt=""></div>
+                </div>
+                <div class="mid img">
+                    <div class="img-con"><img src="img/6.jpg" height="80%" width="89%" alt=""></div>
+                    <div class="img-con"><img src="img/7.jpg" height="80%" width="89%" alt=""></div>
+                    <div class="img-con"><img src="img/8.jpg" height="80%" width="89%" alt=""></div>
+                    <div class="img-con"><img src="img/9.jpg" height="80%" width="89%" alt=""></div>
+
+                </div>
+                <div class="bottom img">
+                    <div class="img-con"><img src="img/10.jpg" height="80%" width="89%" alt=""></div>
+                    <div class="img-con"><img src="img/111.jpg" height="80%" width="89%" alt=""></div>
+                    <div class="img-con"><img src="img/12.jpg" height="80%" width="89%" alt=""></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="slides slide4">
+            <div class="top2">
+            </div>
+            <div class="about-con">
+                <div class="about1">
+                    <div class="img-about">
+                        <img src="img/mission.jpg" height="95%" width="95%">
+                    </div>
+                    <div class="img-about">
+                        <center>
+                            <img src="img/vision.jpg" height="95%" width="95%">
+                        </center>
+                    </div>
+                    <div class="img-about">
+                        <center>
+                            <img src="img/history.png" height="95%" width="95%">
+                        </center>
+                    </div>
+                    <div class="img-about">
+                        <center>
+                            <img src="img/location.jpg" height="95%" width="95%">
+                        </center>
+                    </div>
+                    <div class="img-about">
+                        <center>
+                            <img src="img/loc.jpg" height="95%" width="95%">
+                        </center>
+                    </div>
+
+
+
+                </div>
+            </div>
+    </section>
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var nav = document.querySelector('nav');
+            if (window.pageYOffset > 0) {
+                nav.classList.add('black');
+            } else {
+                nav.classList.remove('black');
+            }
+        });
+
+        let sections = document.querySelectorAll('section');
+        let navLinks = document.querySelectorAll('nav ul li a');
+
+        window.onscroll = () => {
+            sections.forEach(sec => {
+
+                let top = window.scrollY;
+                let offset = sec.offsetTop - 150;
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute('id');
+
+                if (top >= offset && top < offset + height) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        document.querySelector('nav ul li a[href*=' + id + ']').classList.add('active');
+                    });
+                }
+            });
+        }
+
+        var content = document.getElementsByTagName('body')[0];
+        var darkMode = document.getElementById('dark-change');
+        darkMode.addEventListener('click', function () {
+            darkMode.classList.toggle('active');
+            content.classList.toggle('night');
+        })
+
+
+    </script>
+    </div>
+</body>
+
+</html>

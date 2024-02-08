@@ -1,0 +1,260 @@
+* {
+   padding: 0;
+   margin: 0;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+   width: 100%;
+   height: 100vh;
+   background-size: cover;
+   background-attachment: fixed;
+   position: relative;
+}
+
+nav {
+   position: fixed;
+   width: 100%;
+}
+
+nav ul {
+   list-style: none;
+   background: rgba(0, 0, 0, 0);
+   overflow: hidden;
+   color: white;
+   padding: 0;
+   text-align: center;
+   margin: 0;
+   transition: 1s;
+}
+
+nav.black ul {
+   background: #04ec0f;
+}
+
+nav ul li {
+   display: inline-block;
+   padding: 20px;
+   font-family: cursive;
+}
+
+nav ul li a {
+   text-decoration: none;
+   color: #fff8e7;
+   font-size: 15px;
+   font-family: sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-family: cursive;
+   font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+   color: palevioletred;
+   font-weight: bold;
+}
+
+.img-logo {
+   height: 84%;
+   width: 15%;
+   position: absolute;
+   top: 13%;
+   left: 3%;
+   padding: 1%;
+}
+
+.logo1 {
+   height: 30%;
+   width: 100%;
+   margin-bottom: 9%;
+}
+
+.logo {
+   position: fixed;
+   float: left;
+   margin: .8%;
+}
+
+.logo a {
+   text-decoration: none;
+   display: flex;
+
+}
+
+.logo a div img {
+   width: 40px;
+   height: auto;
+   border-radius: 50px;
+}
+
+.slides {
+   width: 100%;
+   height: 100vh;
+}
+
+.slide2 {
+   background: rgb(218, 213, 213);
+   padding-top: 70px;
+   background-image: linear-gradient(rgba(157, 237, 165, 0.5), rgba(157, 237, 165, 0.5), rgba(95, 218, 126, 0.5)), url(img/cpsuu.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+.dept {
+   width: 100%;
+   height: 43%;
+   display: flex;
+   justify-content: space-evenly;
+   padding-top: 1%;
+}
+
+.title {
+   width: 50%;
+   margin: auto;
+}
+
+.title h1 {
+   text-align: center;
+   font-size: 35px;
+}
+
+.dept-con {
+   align-content: center;
+   width: 20%;
+   height: 100%;
+   background-image: linear-gradient(rgba(9, 245, 32, 0.5), rgba(226, 230, 227, 0.5), rgb(7, 206, 24));
+}
+
+.dept-con img {
+   width: 50%;
+   height: 60%;
+}
+
+.wrapper {
+   background-image: linear-gradient(rgba(193, 202, 188, 0.509), rgba(193, 202, 188, 0.509)), url(img/CPSU2.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: sans-serif;
+}
+
+.banner-text {
+   animation: pulse 5s infinite;
+   font-size: 120px;
+   letter-spacing: 2px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: bold;
+}
+
+@keyframes pulse {
+   0% {
+      color: #35bb09;
+   }
+
+   10% {
+      color: #35bb09;
+   }
+
+   30% {
+      color: #fff;
+   }
+
+   50% {
+      color: #35bb09;
+   }
+
+   60% {
+      color: #35bb09;
+   }
+
+   80% {
+      color: #fff;
+   }
+
+   100% {
+      color: #35bb09;
+   }
+}
+
+.banner-text:after {
+   content: "";
+   animation: spin 5s linear infinite;
+   font-family: sans-serif;
+
+}
+
+@keyframes spin {
+   0% {
+      content: "WELCOME TO";
+   }
+
+   100% {
+      content: "CPSU ";
+   }
+
+}
+
+.slide3 {
+   padding-top: 8%;
+   background-image: url(img/77.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.img {
+   height: 25vh;
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.img-con {
+   height: 90%;
+   width: 180px;
+   border: solid 1px black;
+   background-color: #fff8e7;
+}
+
+.img-con img {
+   margin: 10px;
+}
+
+.top2 {
+   width: 100%;
+   height: 81vh;
+   background-image: linear-gradient(rgba(193, 202, 188, 0.509), rgba(193, 202, 188, 0.509)), url(img/pp.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.about-con {
+   display: flex;
+   justify-content: space-evenly;
+   border: solid 1px black;
+   width: 100%;
+   height: 70vh;
+}
+
+.about1 {
+   border: solid 1px black;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   justify-content: flex-start;
+}
+
+.img-about {
+   width: 30%;
+   height: 90%;
+}
+
+.img-about center {
+   width: 100%;
+   height: 100%;
+}
